@@ -1,0 +1,62 @@
+.filter__item{
+    display: flex;
+    background-color: #fff;
+    width: fit-content;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+
+}
+.item__boxes{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1.4rem;
+}
+
+.item__details {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.4rem;
+    width: 360px;
+    border: 1px solid #ddd; /* Add a border for better separation */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.details__box{
+    font-size: 14px;
+}
+  
+  
+  .details__box2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: end;
+    /* position: relative; */
+  }
+  
+  .Returns-btn,
+  .Return__btn {
+    text-decoration: none;
+  }
+  
+  .image__container {
+    height: 120px;
+    width: auto;
+    border-radius: 5px;
+  }
+  
+  /* Add more styles as needed */
+  
+  .Return__btn{
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  .Return__btn:hover{
+    background-color: black;
+  }

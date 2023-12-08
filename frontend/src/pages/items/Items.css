@@ -1,0 +1,42 @@
+.item__list{
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  align-items: center;
+  gap: 2rem;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.itemtype__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  color: #000;
+  border-radius: 50%;
+  background: #36D1DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+  white-space: nowrap;
+  height: 100px;
+  width: 100px;
+}
+
+.itemtype__item span{
+  font-size: 16px;
+}
+
+.itemtype__item p{
+  font-size: 20px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .item__list{
+    grid-template-columns: repeat(2, auto);
+  }
+}

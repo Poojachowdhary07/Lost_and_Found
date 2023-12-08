@@ -1,0 +1,49 @@
+
+.card {
+  width: 250px;
+  min-height: 300px;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  border-radius: 13px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: #1488cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2b32b2,
+    #1488cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2b32b2,
+    #1488cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 22px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.card:active {
+  transform: scale(0.95);
+}
+
+/* Smart phones */
+@media screen and (max-width: 600px) {
+  .Cards-Container {
+    flex-direction: column; /* Two columns */
+  }
+
+  .card {
+    min-height: 160px;
+    padding: 12px;
+  }
+}
